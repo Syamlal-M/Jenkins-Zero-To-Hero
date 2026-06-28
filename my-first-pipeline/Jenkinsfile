@@ -8,11 +8,9 @@ pipeline {
         sh 'node --version'
       }
     }
-  }
-  stages {
-    stage('loadstatus') {
+    stage('load') {
       steps {
-        sh 'top -c '
+       sh 'top -c'
       }
     }
   }
