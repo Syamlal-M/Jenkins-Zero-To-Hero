@@ -10,7 +10,7 @@ pipeline {
     }
     stage('load') {
       steps {
-       sh 'top -c'
+       sh 'top'
       }
     }
   }
