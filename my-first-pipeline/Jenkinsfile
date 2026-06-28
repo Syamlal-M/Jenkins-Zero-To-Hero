@@ -10,7 +10,7 @@ pipeline {
     }
     stage('load') {
       steps {
-       sh 'lscpu'
+       sh 'cat /proc/cpuinfo'
       }
     }
   }
